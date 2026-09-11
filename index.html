@@ -77,11 +77,15 @@ body{
   position:absolute;inset:0;opacity:.05;mix-blend-mode:overlay;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
 }
-.ondas{position:absolute;left:0;right:0;bottom:0;height:230px}
+.ondas{
+  position:absolute;left:0;right:0;bottom:0;height:196px;
+  -webkit-mask-image:linear-gradient(to bottom, transparent 0%, #000 52%);
+  mask-image:linear-gradient(to bottom, transparent 0%, #000 52%);
+}
 .ondas svg{position:absolute;bottom:0;left:0;width:200%;height:100%;display:block}
-.ondas .o1{animation:desliza 26s linear infinite;opacity:.30}
-.ondas .o2{animation:desliza 17s linear infinite reverse;opacity:.20;bottom:-14px}
-.ondas .o3{animation:desliza 11s linear infinite;opacity:.13;bottom:-30px}
+.ondas .o1{animation:desliza 26s linear infinite;opacity:.34}
+.ondas .o2{animation:desliza 17s linear infinite reverse;opacity:.16;bottom:-22px}
+.ondas .o3{animation:desliza 11s linear infinite;opacity:.07;bottom:-44px}
 @keyframes desliza{from{transform:translateX(0)}to{transform:translateX(-360px)}}
 
 /* ───────── coluna ───────── */
@@ -142,8 +146,8 @@ h1{
 .icone svg{width:22px;height:22px;display:block}
 
 .txt{flex:1;min-width:0}
-.rot{font-size:1rem;font-weight:600;letter-spacing:-.2px;line-height:1.25}
-.sub{font-size:.72rem;color:var(--mudo);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rot{display:block;font-size:1rem;font-weight:600;letter-spacing:-.2px;line-height:1.25}
+.sub{display:block;font-size:.72rem;color:var(--mudo);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .seta{width:16px;height:16px;flex:none;color:var(--mudo);transition:transform .16s ease,color .16s ease}
 .bloco:hover .seta{transform:translateX(3px);color:var(--teal)}
 
