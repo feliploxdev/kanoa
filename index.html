@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kanoa Surf — Links</title>
+<meta name="description" content="Loja virtual, WhatsApp, Instagram e TikTok da Kanoa Surf. Moda praia feita em Fortaleza/CE.">
+<meta name="theme-color" content="#04181F">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kanoa Surf">
+<meta property="og:title" content="Kanoa Surf — Links">
+<meta property="og:description" content="Loja virtual, WhatsApp, Instagram e TikTok da Kanoa Surf. Moda praia feita em Fortaleza/CE.">
+<meta property="og:image" content="logo.png">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2304181F'/%3E%3Cpath d='M4 21c3.2-3.6 6.4-3.6 9.6 0s6.4 3.6 9.6 0 6.4-3.6 9.6 0' fill='none' stroke='%233ABFC0' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&display=swap">
+
+<style>
+:root{
+  color-scheme: dark;
+  --abissal:#04181F;
+  --fundo2:#072A35;
+  --card:#0E3C49;
+  --card-alta:#12495A;
+  --borda:#1D5F70;
+  --teal:#3ABFC0;
+  --teal-claro:#8FE4E4;
+  --coral:#E8832A;
+  --coral-claro:#FFB36B;
+  --wa:#2FA76F;
+  --areia:#EFE3D0;
+  --espuma:#F4FAF9;
+  --mudo:#83A8B1;
+  --raio:16px;
+  --sombra:0 12px 34px rgba(0,0,0,.42);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{-webkit-text-size-adjust:100%}
+
+body{
+  min-height:100dvh;
+  background:var(--abissal);
+  color:var(--espuma);
+  font-family:'Archivo','Helvetica Neue',Arial,sans-serif;
+  font-size:16px;
+  line-height:1.5;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:44px 20px 0;
+  position:relative;
+  overflow-x:hidden;
+}
+
+/* ───────── cenário: oceano em camadas ───────── */
+.oceano{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.oceano .grad{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(120% 70% at 50% -10%, #0B4655 0%, rgba(11,70,85,0) 62%),
+    radial-gradient(90% 55% at 90% 8%, rgba(58,191,192,.22) 0%, rgba(58,191,192,0) 60%),
+    linear-gradient(180deg, #062632 0%, #04181F 46%, #03131A 100%);
+}
+.oceano .sol{
+  position:absolute;top:-90px;left:50%;transform:translateX(-50%);
+  width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle, rgba(232,131,42,.20) 0%, rgba(232,131,42,0) 68%);
+}
+.oceano .grao{
+  position:absolute;inset:0;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.ondas{position:absolute;left:0;right:0;bottom:0;height:230px}
+.ondas svg{position:absolute;bottom:0;left:0;width:200%;height:100%;display:block}
+.ondas .o1{animation:desliza 26s linear infinite;opacity:.30}
+.ondas .o2{animation:desliza 17s linear infinite reverse;opacity:.20;bottom:-14px}
+.ondas .o3{animation:desliza 11s linear infinite;opacity:.13;bottom:-30px}
+@keyframes desliza{from{transform:translateX(0)}to{transform:translateX(-360px)}}
+
+/* ───────── coluna ───────── */
+main{
+  position:relative;z-index:1;
+  width:100%;max-width:408px;
+  display:flex;flex-direction:column;gap:12px;
+  padding-bottom:64px;
+}
+
+/* ───────── cabeçalho ───────── */
+.topo{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;margin-bottom:14px}
+.selo{
+  width:108px;height:108px;border-radius:50%;
+  display:grid;place-items:center;
+  background:linear-gradient(160deg,#0A3542,#051D26);
+  border:1px solid var(--borda);
+  box-shadow:0 0 0 7px rgba(58,191,192,.07), 0 14px 32px rgba(0,0,0,.5);
+}
+.selo img{width:70px;height:auto;display:block;filter:brightness(0) invert(1)}
+h1{
+  font-family:'Archivo Black','Archivo',sans-serif;
+  font-size:1.62rem;letter-spacing:-.6px;line-height:1.1;
+  color:var(--espuma);
+}
+.bio{font-size:.9rem;color:var(--mudo);max-width:19rem;text-wrap:balance}
+.local{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:.62rem;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;
+  color:var(--teal-claro);
+  background:rgba(58,191,192,.10);
+  border:1px solid rgba(58,191,192,.26);
+  padding:5px 13px;border-radius:999px;
+}
+.local svg{width:11px;height:11px;flex:none}
+
+/* ───────── cartões ───────── */
+.bloco{
+  display:flex;align-items:center;gap:14px;
+  background:var(--card);
+  border:1px solid var(--borda);
+  border-radius:var(--raio);
+  padding:16px 16px;
+  color:var(--espuma);text-decoration:none;
+  box-shadow:var(--sombra);
+  transition:transform .16s ease, background .16s ease, border-color .16s ease;
+}
+.bloco:hover{background:var(--card-alta);border-color:#2A7688;transform:translateY(-2px)}
+.bloco:active{transform:translateY(0) scale(.99)}
+.bloco:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+
+.icone{
+  width:44px;height:44px;flex:none;border-radius:12px;
+  display:grid;place-items:center;
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.10);
+}
+.icone svg{width:22px;height:22px;display:block}
+
+.txt{flex:1;min-width:0}
+.rot{font-size:1rem;font-weight:600;letter-spacing:-.2px;line-height:1.25}
+.sub{font-size:.72rem;color:var(--mudo);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.seta{width:16px;height:16px;flex:none;color:var(--mudo);transition:transform .16s ease,color .16s ease}
+.bloco:hover .seta{transform:translateX(3px);color:var(--teal)}
+
+/* destaque do mês */
+.destaque{
+  position:relative;
+  background:linear-gradient(135deg,#1A4A3C 0%,#123F49 58%,#0E3C49 100%);
+  border-color:#2F7F5E;
+}
+.destaque:hover{background:linear-gradient(135deg,#1F5745 0%,#164A56 58%,#12495A 100%);border-color:#3C9E74}
+.destaque .icone{background:rgba(232,131,42,.16);border-color:rgba(232,131,42,.34)}
+.tag{
+  position:absolute;top:-8px;left:14px;
+  font-size:.55rem;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;
+  background:var(--coral);color:#231004;
+  padding:3px 9px;border-radius:999px;
+  box-shadow:0 3px 10px rgba(232,131,42,.35);
+}
+
+/* loja — o link principal */
+.principal{
+  background:linear-gradient(135deg,var(--coral) 0%,#D96C1C 100%);
+  border-color:#F0A05A;
+  padding:19px 16px;
+}
+.principal:hover{background:linear-gradient(135deg,#F2913A 0%,#E4761F 100%);border-color:#FFC48A}
+.principal .rot{font-family:'Archivo Black','Archivo',sans-serif;font-size:1.06rem;color:#2A1104;letter-spacing:-.3px}
+.principal .sub{color:rgba(42,17,4,.66)}
+.principal .icone{background:rgba(42,17,4,.14);border-color:rgba(42,17,4,.20)}
+.principal .icone svg{color:#2A1104}
+.principal .seta{color:rgba(42,17,4,.6)}
+.principal:hover .seta{color:#2A1104}
+
+/* whatsapp */
+.zap .icone{background:rgba(47,167,111,.16);border-color:rgba(47,167,111,.36)}
+.zap .icone svg{color:#63D79E}
+
+/* redes: dois por linha */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.duo .bloco{flex-direction:column;align-items:flex-start;gap:11px;padding:15px 14px}
+.duo .seta{display:none}
+.duo .rot{font-size:.92rem}
+.duo .sub{font-size:.68rem}
+.insta .icone{background:rgba(214,64,159,.14);border-color:rgba(214,64,159,.32)}
+.insta .icone svg{color:#F08FD0}
+.tiktok .icone{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.16)}
+.tiktok .icone svg{color:#7BF1E6}
+
+/* ───────── rodapé ───────── */
+.pe{
+  margin-top:18px;text-align:center;
+  display:flex;flex-direction:column;align-items:center;gap:9px;
+}
+.pe .linha{width:52px;height:1px;background:var(--borda)}
+.pe a{color:var(--teal);text-decoration:none;font-weight:600;font-size:.82rem}
+.pe a:hover{color:var(--teal-claro);text-decoration:underline}
+.pe .tel{color:var(--mudo);font-size:.76rem;font-variant-numeric:tabular-nums}
+.pe .tel a{color:var(--mudo);font-weight:500}
+.pe .marca{
+  font-size:.58rem;letter-spacing:2.4px;text-transform:uppercase;
+  color:#3E6270;margin-top:2px;
+}
+
+/* ───────── entrada ───────── */
+@media (prefers-reduced-motion: no-preference){
+  .anima{opacity:0;transform:translateY(14px);animation:sobe .6s cubic-bezier(.2,.7,.3,1) forwards}
+  .anima:nth-child(1){animation-delay:.04s}
+  .anima:nth-child(2){animation-delay:.10s}
+  .anima:nth-child(3){animation-delay:.16s}
+  .anima:nth-child(4){animation-delay:.22s}
+  .anima:nth-child(5){animation-delay:.28s}
+  .anima:nth-child(6){animation-delay:.34s}
+  @keyframes sobe{to{opacity:1;transform:translateY(0)}}
+}
+@media (prefers-reduced-motion: reduce){
+  .ondas .o1,.ondas .o2,.ondas .o3{animation:none}
+  .bloco{transition:none}
+}
+
+@media (max-width:360px){
+  h1{font-size:1.42rem}
+  .selo{width:94px;height:94px}
+  .selo img{width:60px}
+  .duo{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="oceano" aria-hidden="true">
+  <div class="grad"></div>
+  <div class="sol"></div>
+  <div class="ondas">
+    <svg class="o1" viewBox="0 0 1440 230" preserveAspectRatio="none"><path d="M-360,96 c60,-40 120,-40 180,0 c60,40 120,40 180,0 c60,-40 120,-40 180,0 c60,40 120,40 180,0 c60,-40 120,-40 180,0 c60,40 120,40 180,0 c60,-40 120,-40 180,0 c60,40 120,40 180,0 c60,-40 120,-40 180,0 c60,40 120,40 180,0 L1800,230 L-360,230 Z" fill="#0B4E5E"/></svg>
+    <svg class="o2" viewBox="0 0 1440 230" preserveAspectRatio="none"><path d="M-360,96 c60,-40 120,-40 180,0 c60,40 120,40 180,0 c60,-40 120,-40 180,0 c60,40 120,40 180,0 c60,-40 120,-40 180,0 c60,40 120,40 180,0 c60,-40 120,-40 180,0 c60,40 120,40 180,0 c60,-40 120,-40 180,0 c60,40 120,40 180,0 L1800,230 L-360,230 Z" fill="#3ABFC0"/></svg>
+    <svg class="o3" viewBox="0 0 1440 230" preserveAspectRatio="none"><path d="M-360,96 c60,-40 120,-40 180,0 c60,40 120,40 180,0 c60,-40 120,-40 180,0 c60,40 120,40 180,0 c60,-40 120,-40 180,0 c60,40 120,40 180,0 c60,-40 120,-40 180,0 c60,40 120,40 180,0 c60,-40 120,-40 180,0 c60,40 120,40 180,0 L1800,230 L-360,230 Z" fill="#EFE3D0"/></svg>
+  </div>
+  <div class="grao"></div>
+</div>
+
+<main>
+
+  <header class="topo anima">
+    <div class="selo"><img src="logo.png" alt="Kanoa Surf" width="886" height="528"></div>
+    <h1>@kanoasurf</h1>
+    <p class="bio">Confira os nossos produtos, entre em contato e aproveite todas as novidades.</p>
+    <span class="local">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+      Fortaleza · Ceará
+    </span>
+  </header>
+
+  <!-- DESTAQUE DO MÊS — é só apagar este <a> quando a novidade mudar -->
+  <a class="bloco destaque anima" href="https://kanoasurf.com" target="_blank" rel="noopener">
+    <span class="tag">Novo</span>
+    <span class="icone">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#FFB36B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M8.5 3.5 5 5.2 3 9l2.6 1.3L6 20.5h12l.4-10.2L21 9l-2-3.8-3.5-1.7"/>
+        <path d="M8.5 3.5c1.2 1.8 5.8 1.8 7 0"/>
+      </svg>
+    </span>
+    <span class="txt">
+      <span class="rot">Camiseta Algodão Peruano</span>
+      <span class="sub">Chegou em 6 cores · do P ao GG</span>
+    </span>
+    <svg class="seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+  </a>
+
+  <a class="bloco principal anima" href="https://kanoasurf.com" target="_blank" rel="noopener">
+    <span class="icone">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M5 8h14l-1.2 12H6.2L5 8z"/>
+        <path d="M9 8V6.4a3 3 0 0 1 6 0V8"/>
+      </svg>
+    </span>
+    <span class="txt">
+      <span class="rot">Loja Virtual Kanoa Surf</span>
+      <span class="sub">kanoasurf.com</span>
+    </span>
+    <svg class="seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+  </a>
+
+  <a class="bloco zap anima" href="https://wa.me/558530137795?text=Oi!%20Vim%20pelo%20Instagram%20e%20quero%20saber%20mais%20%F0%9F%8C%8A" target="_blank" rel="noopener">
+    <span class="icone">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 2.2a9.7 9.7 0 0 0-8.3 14.7L2.2 21.8l5-1.4A9.7 9.7 0 1 0 12 2.2zm0 1.9a7.8 7.8 0 0 1 0 15.6 7.8 7.8 0 0 1-4-1.1l-.4-.2-2.7.8.8-2.6-.2-.4A7.8 7.8 0 0 1 12 4.1z"/>
+        <path d="M9.3 7.5c-.2-.5-.4-.5-.7-.5h-.5c-.2 0-.5.1-.8.4-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.7 2.8 4.3 3.8 2.1.8 2.5.7 2.9.6.5 0 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1 0-.1-.2-.2-.5-.3l-1.6-.8c-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2-1.3-.7-.7-1.2-1.4-1.3-1.7-.1-.2 0-.3.1-.5l.4-.5c.1-.2.1-.3 0-.5l-.4-1.6z"/>
+      </svg>
+    </span>
+    <span class="txt">
+      <span class="rot">Compre pelo Whats</span>
+      <span class="sub">(85) 3013-7795 · atendimento direto</span>
+    </span>
+    <svg class="seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+  </a>
+
+  <div class="duo anima">
+    <a class="bloco insta" href="https://www.instagram.com/kanoasurf" target="_blank" rel="noopener">
+      <span class="icone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5.2"/>
+          <circle cx="12" cy="12" r="4.1"/>
+          <circle cx="17.2" cy="6.8" r="1.15" fill="currentColor" stroke="none"/>
+        </svg>
+      </span>
+      <span class="txt">
+        <span class="rot">Instagram</span>
+        <span class="sub">@kanoasurf</span>
+      </span>
+    </a>
+
+    <a class="bloco tiktok" href="https://www.tiktok.com/@kanoasurf" target="_blank" rel="noopener">
+      <span class="icone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14.2 3v9.9a3.3 3.3 0 1 1-2.6-3.2"/>
+          <path d="M14.2 3c.4 2.4 2.1 4 4.6 4.2"/>
+        </svg>
+      </span>
+      <span class="txt">
+        <span class="rot">TikTok</span>
+        <span class="sub">@kanoasurf</span>
+      </span>
+    </a>
+  </div>
+
+  <footer class="pe anima">
+    <span class="linha"></span>
+    <a href="https://kanoasurf.com" target="_blank" rel="noopener">kanoasurf.com</a>
+    <span class="tel">Atendimento · <a href="tel:+558530137795">(85) 3013-7795</a></span>
+    <span class="marca">Moda praia feita no Ceará</span>
+  </footer>
+
+</main>
+
+</body>
+</html>
